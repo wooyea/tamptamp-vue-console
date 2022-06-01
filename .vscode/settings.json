@@ -1,0 +1,27 @@
+{
+  "editor.detectIndentation": false,
+  // 重新设定tabsize
+  "editor.tabSize": 2,
+  // #每次保存的时候自动格式化 
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur",
+  },
+  "vetur.format.defaultFormatter.html": "none",
+  "vetur.format.defaultFormatter.js": "none",
+  "vetur.format.defaultFormatter.ts": "none",
+  "files.autoSave": "onFocusChange",
+  "eslint.format.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.options": {},
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.lintTask.enable": true,
+  "liveServer.settings.port": 5502,
+  "files.eol": "\n",
+}
