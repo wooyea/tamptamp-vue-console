@@ -87,8 +87,21 @@ export default defineComponent({
         {
           id: 2,
           parentId: 0,
-          name: 'iframe页面',
-          url: '/iframe-page',
+          name: 'iframe页面层级嵌套',
+        },
+        {
+          id: 3,
+          parentId: 2,
+          name: 'iframe页面1 - B站',
+          url: 'https://www.bilibili.com',
+          pageType: 'iframe',
+        },
+        {
+          id: 4,
+          parentId: 2,
+          name: 'iframe页面2 - 菜鸟教程',
+          url: 'https://www.runoob.com/',
+          pageType: 'iframe',
         },
       ];
       const list: any[] = [];

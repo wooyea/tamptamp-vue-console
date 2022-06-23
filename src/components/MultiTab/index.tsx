@@ -92,27 +92,6 @@ export default defineComponent({
         })
       },
       titleResolver(page: any): any {
-        if (page.query.iframePath && page.query.iframePath.length !== 0) {
-          let url: any = null
-          const indexId = page.query.iframePath.indexOf('?')
-          if (indexId !== -1) {
-            url = page.query.iframePath.substring(0, indexId)
-          } else {
-            url = page.query.iframePath
-          }
-          if (proxy.$root.resourcePageName) {
-            if (page.query.defineTitle) {
-              return page.query.defineTitle
-            }
-            if (proxy.$root.resourcePageName[url] && proxy.$root.resourcePageName[url].length !== 0) {
-              if (page.query.bsId) {
-                const title = proxy.$root.resourcePageName[url] + '[' + page.query.bsId + ']'
-                return title
-              }
-              return proxy.$root.resourcePageName[url]
-            }
-          }
-        }
         let title = page.meta.title
         if (page.query.bsId && page.query.bsId.length != 0) {
           title += '[' + page.query.bsId + ']'
@@ -166,7 +145,6 @@ export default defineComponent({
 
       return (
         <a-menu
-          mode="inline"
           onClick={(dom: any) => {
             this.onClickTab(e, dom.key)
           }}
@@ -218,7 +196,7 @@ export default defineComponent({
     })
 
     return (
-      <div class="xs-tabs">
+      <div class="admin-tabs">
         <a-tabs
           hideAdd
           type={'editable-card'}

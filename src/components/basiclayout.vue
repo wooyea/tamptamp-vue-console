@@ -112,7 +112,6 @@
 
 .side-search-input {
   width: 165px;
-  padding: 1px 11px;
   transition: all 0.3s;
 }
 </style>
