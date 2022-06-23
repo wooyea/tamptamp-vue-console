@@ -22,7 +22,7 @@ export const routes: Array<RouteRecordRaw> = [
         component: () => import('@/pages/views/index/index.vue'),
       },
       {
-        path: '/iframe-page',
+        path: '/iframepage',
         name: 'IframePage',
         meta: {
           title: 'Iframe页面',
@@ -30,7 +30,7 @@ export const routes: Array<RouteRecordRaw> = [
           pageType: 'iframe',
           customRefresh: true,
         },
-        component: () => import('@/pages/views/iframePage/index.vue'),
+        component: () => import('@/pages/views/iframepage/index.vue'),
       },
       // #endregion
     ],

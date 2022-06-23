@@ -25,7 +25,7 @@
     <template #icon>
       <MenuFoldOutlined style="font-size: 16px; color: #ffffff" />
     </template>
-    <router-link :to="menuInfo.pageType=='iframe'?{path:'/iframe-page',query:{realPath:menuInfo.url,defineTitle:menuInfo.name}}:menuInfo.url">
+    <router-link :to="menuInfo.pageType=='iframe'?{path:'/iframepage',query:{realPath:menuInfo.url,defineTitle:menuInfo.name}}:menuInfo.url">
       <template v-if="menuInfo.name.indexOf(filterOption) > -1">
         {{ menuInfo.name.substr(0, menuInfo.name.indexOf(filterOption)) }}
         <span style="color: #f2fc21">{{ filterOption }}</span>
