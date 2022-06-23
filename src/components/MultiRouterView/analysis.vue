@@ -1,5 +1,5 @@
 <template>
-  <sw-keep-alive ref="keepAliveRef">
+  <tt-keep-alive ref="keepAliveRef">
     <Component
       v-if="
         !config.route.meta.pageType &&
@@ -8,7 +8,7 @@
       "
       :is="config.Component"
       :key="config.route.fullPath"></Component>
-  </sw-keep-alive>
+  </tt-keep-alive>
   <Component
     v-if="
       !config.route.meta.pageType &&
@@ -41,7 +41,7 @@ export default defineComponent({
     },
   },
   components: {
-    'sw-keep-alive': KeepAliveImpl,
+    'tt-keep-alive': KeepAliveImpl,
   },
   setup(props) {
     const { proxy }: any = getCurrentInstance();

@@ -4,5 +4,5 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>;
   export default component;
 }
-declare module 'sw-cui';
+declare module 'tt-cui';
 declare module 'vue3-print-nb';
